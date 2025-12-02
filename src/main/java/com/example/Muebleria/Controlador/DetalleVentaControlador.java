@@ -14,6 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/detalleventa")
+@CrossOrigin(origins = "*")
 public class DetalleVentaControlador {
     @Autowired
     private DetalleVentaServi servi;

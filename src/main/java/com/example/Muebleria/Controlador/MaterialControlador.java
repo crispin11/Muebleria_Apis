@@ -8,6 +8,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/material")
+@CrossOrigin(origins = "*")
 public class MaterialControlador {
     @Autowired
     private MaterialServi servi;

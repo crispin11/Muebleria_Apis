@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/producto")
+@CrossOrigin(origins = "*")
 public class ProductoControlador {
     @Autowired
     private ProductoServi servi;

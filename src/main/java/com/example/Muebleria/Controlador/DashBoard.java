@@ -1,5 +1,5 @@
 package com.example.Muebleria.Controlador;
-import com.example.Muebleria.Dto.ProductoDto;
+import org.springframework.web.bind.annotation.*;
 import com.example.Muebleria.Modelo.Producto;
 import com.example.Muebleria.Repositorio.*;
 import com.example.Muebleria.Servicio.ProductoServi;
@@ -17,6 +17,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/dashboard")
+@CrossOrigin(origins = "*")
 public class DashBoard {
     @Autowired
     private ProductoRepo productoRepo;

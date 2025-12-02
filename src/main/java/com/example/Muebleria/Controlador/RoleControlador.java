@@ -8,6 +8,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/role")
+@CrossOrigin(origins = "*")
 public class RoleControlador {
     @Autowired
     private RoleServi servi;

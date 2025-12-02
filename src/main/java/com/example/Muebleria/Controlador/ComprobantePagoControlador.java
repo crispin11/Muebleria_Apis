@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/comprobantepago")
+@CrossOrigin(origins = "*")
 public class ComprobantePagoControlador {
     @Autowired
     private ComprobantePagoServi comprobantePagoService;
