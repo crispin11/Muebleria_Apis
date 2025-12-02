@@ -18,7 +18,11 @@ public class CorsConfig   {
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowCredentials(true);
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:4200/**","http://localhost:63134","https://muebleria-frontend-ahap-108tacz50-giancarlo-crispins-projects.vercel.app","https://muebleria-frontend-ahap-108tacz50-giancarlo-crispins-projects.vercel.app/**"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:4200","http://localhost:4200/**",
+                "https://muebleria-frontend-ahap-108tacz50-giancarlo-crispins-projects.vercel.app",
+                "https://muebleria-frontend-ahap-108tacz50-giancarlo-crispins-projects.vercel.app/**",
+                "https://muebleriagiancarlocrispin.netlify.app/login",
+                "https://muebleriagiancarlocrispin.netlify.app/login/**"));
         configuration.setAllowedMethods(Arrays.asList("GET","POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
